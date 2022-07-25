@@ -1,5 +1,12 @@
 <?php
     include_once("config/url.php");
+    include_once("config/process.php");
+
+    // Limpa a mensagem
+    if(isset($_SESSION['msg'])){
+        $printMsg = $_SESSION['msg'];
+        $_SESSION['msg'] = '';
+    }
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="<?= $BASE_URL ?>css/style.css">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="<?= $BASE_URL ?>img/logo.svg">
 </head>
 <body>
     <header>
