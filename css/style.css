@@ -1,3 +1,7 @@
 body {
     background-color: antiquewhite;
 }
+
+.navbar-brand img{
+    width: 50px;
+}
