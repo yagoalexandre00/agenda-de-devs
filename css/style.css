@@ -64,3 +64,34 @@
     margin-top: 30px;
 }
 
+/* SHOW CONTACT */
+#view-contact-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* BACK BUTTON */
+.back-link-container {
+    display: block;
+    width: 500px;
+    margin: 30px auto 0;
+}
+
+#back-link {
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    border-radius: 4px;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#back-link:hover {
+    color: #FFF;
+    border: 1px solid #007BFF;
+    background-color: #00438b;
+}
