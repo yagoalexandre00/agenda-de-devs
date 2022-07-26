@@ -40,5 +40,5 @@
 </div>
 
 <?php
-    include_once("template/footer.php")
+    include_once("templates/footer.php")
 ?>

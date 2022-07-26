@@ -95,3 +95,9 @@
     border: 1px solid #007BFF;
     background-color: #00438b;
 }
+
+/* CREATE CONTACT */
+#create-form, #edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+}   
