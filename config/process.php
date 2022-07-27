@@ -7,11 +7,28 @@
 
     $data = $_POST;
 
-        
     if(!empty($data)){ // MODIFICAÇÕES NO BANCO
-        print_r($data);
-        exit;
-        
+        if($data["type"] === "create"){
+            $name = $data['name'];
+            $phone = $data['phone'];
+            $observations = $data['observations'];
+
+            $query = "INSERT INTO contacts (name, phone, observations) VALUES (:name, :phone, :observations)";
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(":name", $name);
+            $stmt->bindParam(":phone", $phone);
+            $stmt->bindParam(":observations", $observations);
+            
+            try {
+                $stmt->execute();
+                $_SESSION['msg'] = "Contato criado com sucesso!";
+            } catch(PDOException $e) {
+                // Erro na conexão
+                $error = $e->getMessage();
+                echo "Error: $error";
+            }
+        }
+        header("Location:" . $BASE_URL . "../index.php");
     } else {    // SELEÇÃO DE DADOS
 
         if(!empty($_GET)){
@@ -36,4 +53,8 @@
 
             $contacts = $stmt->fetchAll();
         }
-}
+    }
+
+    // Fechar conexão
+    $conn = null;
+?>
