@@ -3,7 +3,7 @@
     $host = "127.0.0.1";
     $dbname = "agenda";
     $user = "admin";
-    $pass = "12345678";
+    $pass = "1234";
 
     try{
         $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
