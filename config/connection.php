@@ -1,6 +1,6 @@
 <?php
 
-    $host = "127.0.0.1";
+    $host = "mysql-db";
     $dbname = "agenda";
     $user = "admin";
     $pass = "1234";
