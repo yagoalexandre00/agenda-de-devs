@@ -4,9 +4,10 @@
     $dbname = "agenda";
     $user = "admin";
     $pass = "1234";
+    $port = "3306";
 
     try{
-        $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+        $conn = new PDO("mysql:host=$host;port=$port;dbname=$dbname", $user, $pass);
 
         // Ativar modo de debug de erros
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
