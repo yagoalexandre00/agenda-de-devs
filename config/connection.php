@@ -2,7 +2,7 @@
 
     $host = "mysql-db";
     $dbname = "agenda";
-    $user = "root";
+    $user = "root" ;
     $pass = "1234";
     $port = "3306";
 
