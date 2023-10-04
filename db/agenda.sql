@@ -6,7 +6,9 @@
 -- Tempo de geração: 22-Dez-2022 às 02:47
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.1.12
-CREATE DATABASE agenda;
+
+
+-- CREATE DATABASE agenda;
 USE agenda;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;

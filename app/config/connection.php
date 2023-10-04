@@ -1,6 +1,6 @@
 <?php
 
-    $host = "mysql-db";
+    $host = "mariadb";
     $dbname = "agenda";
     $user = "root" ;
     $pass = "1234";
